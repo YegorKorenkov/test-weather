@@ -1,0 +1,30 @@
+.error {
+  @include flex($align: center, $justify: space-between);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  padding: 10px;
+  background-color: #e33473;
+  box-shadow: 2px 2px 12px rgba(111, 116, 162, 0.1);
+  border-radius: 20px;
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 250px;
+  }
+
+  svg {
+    margin-left: 20px;
+    cursor: pointer;
+    path {
+      fill: #fff;
+    }
+
+    &:hover {
+      path {
+        fill: #ebd6dd;
+      }
+    }
+  }
+}

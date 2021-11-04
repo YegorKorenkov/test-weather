@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+}
+
+html {
+  height: auto;
+  background: linear-gradient(
+      180deg,
+      rgba(165, 172, 241, 0.884) 0%,
+      rgba(122, 148, 194, 0.942) 100%
+    )
+    fixed;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  @include flex($align: center, $direction: column);
+
+  @include max-width-956 {
+    max-width: 956px;
+  }
+}
+
+.weather {
+  @include flex($align: center, $direction: column);
+}

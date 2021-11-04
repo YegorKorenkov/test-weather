@@ -1,0 +1,11 @@
+@import './base/mixins.scss';
+@import './base/variables.scss';
+@import './base/general.scss';
+
+@import './components/Search.scss';
+@import './components/CurrentWeather.scss';
+@import './components/DaysWeather.scss';
+@import './components/Error.scss';
+@import './components/History.scss';
+@import './components/DetailWeather.scss';
+@import './components/Loader.scss';

@@ -1,0 +1,52 @@
+.search {
+  @include flex($align: center, $justify: center);
+  margin-top: 40px;
+  font-size: 16px;
+
+  &-block {
+    position: relative;
+  }
+
+  &__container {
+    @include flex($align: center, $justify: center);
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid transparent;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+
+    &_active {
+      border: 2px solid $color-blue;
+    }
+  }
+
+  &__input {
+    width: 200px;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: rgb(44, 43, 43);
+  }
+
+  &__button {
+    height: 35px;
+    width: 120px;
+    border-radius: 20px;
+    margin-left: 20px;
+    background-color: $color-blue;
+    color: #fff;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+      background-color: $color-dark-blue;
+    }
+  }
+}

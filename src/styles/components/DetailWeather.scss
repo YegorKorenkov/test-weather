@@ -1,0 +1,76 @@
+.detail-weather {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  @include flex($align: flex-start, $justify: center);
+  flex-wrap: wrap;
+
+  @include max-width-956 {
+    width: 480px;
+  }
+
+  @include max-width-500 {
+    width: 380px;
+  }
+
+  &__item {
+    @include flex($align: center, $direction: column);
+
+    padding: 10px 5px;
+    width: 100px;
+    height: 210px;
+    position: relative;
+    justify-content: flex-start;
+
+    &_gradient {
+      background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
+    }
+  }
+
+  &__upper-block {
+    @include flex($align: center, $direction: column);
+
+    .time {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    img {
+      padding-top: 5px;
+    }
+
+    p {
+      font-size: 13px;
+      text-align: center;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__lower-block {
+    @include flex($align: center, $direction: column);
+    position: absolute;
+    bottom: 10px;
+
+    img {
+      height: 8px;
+    }
+
+    .temp {
+      font-size: 18px;
+      margin-bottom: 5px;
+
+      span {
+        padding-left: 5px;
+      }
+    }
+
+    .humidity {
+      img {
+        padding-right: 2px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
