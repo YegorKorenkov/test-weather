@@ -5,7 +5,7 @@
   right: 20px;
   z-index: 10;
   padding: 10px;
-  background-color: #e33473;
+  background-color: $color-pink;
   box-shadow: 2px 2px 12px rgba(111, 116, 162, 0.1);
   border-radius: 20px;
   p {
@@ -23,7 +23,7 @@
 
     &:hover {
       path {
-        fill: #ebd6dd;
+        fill: $color-light-grey;
       }
     }
   }

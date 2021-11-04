@@ -64,10 +64,10 @@
 
     &-choosed {
       border: 1px solid $color-blue;
-      background-color: rgba(80, 87, 119, 0.15);
+      background-color: $color-choosed-card;
 
       &:hover {
-        background-color: rgba(100, 106, 133, 0.2);
+        background-color: $color-choosed-card-hover;
       }
     }
   }

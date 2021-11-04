@@ -31,7 +31,11 @@
     border-radius: 20px;
     padding: 0 15px;
     font-size: 14px;
-    color: rgb(44, 43, 43);
+    color: $color-grey;
+
+    &::placeholder {
+      color: $color-grey;
+    }
   }
 
   &__button {
